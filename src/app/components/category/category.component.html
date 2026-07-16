@@ -1,0 +1,60 @@
+<div class="row justify-content-center md-3">
+  <div class="col-md-4 text-center">
+    <h1>وظایف - TODOS</h1>
+    <p class="text-info">
+      اینجا میتونید وظایف و کارهاتون رو اضافه و مدیریت کنید
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form class="form-inline" (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="row">
+        <div class="col-md-9 form-group">
+          <input type="text" [ngClass]="{'invalid':f.invalid&&f.touched}" placeholder="وظایف خودتون رو اینجا اضاف کنید..." name="name"
+            class="form-control drop-shadow" [ngModel]="updateData.name" required />
+        </div>
+        <div class="col-md-1 form-group">
+          <input type="hidden" placeholder="" name="id" class="form-control drop-shadow" [ngModel]="updateData.id" />
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary col-md-2 btn-todo btn-block drop-shadow" [disabled]="f.invalid">
+            {{isAdd?'افزودن':'ویرایش'}}
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="row categories-list">
+  @for (category of catecories; track $index) {
+
+  <div class="col-md-3" [routerLink]="['/todo',category.id]" >
+
+    <div class="card drop-shadow" [style.border-left-color]="category.color">
+      <div class="card-body">
+                  <div class="clearfix">
+                    <div class="float-left">
+                    </div>
+                    <div class="float-right cat-tools" (click)="deleteCategory($event,category.id!)">
+                      <small><i class="fas fa-trash text-danger" ></i></small>
+                    </div>
+                  </div>
+          
+                  <div class="todo-content" (click)="updateCategory(category,$event)">
+                    <h3 style="color: blueviolet;">{{category.name}}</h3>
+                  </div>
+                  <span class="badge badge-danger">{{category.countTodo}} - Todos</span>
+          
+                </div>
+
+    </div>
+  </div>
+  }
+
+
+
+</div>

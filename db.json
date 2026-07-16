@@ -1,0 +1,55 @@
+{
+  "categories": [
+    {
+      "name": "کارهای روزانه",
+      "color": "#28200c",
+      "countTodo": 1,
+      "id": "PzGqAVRCRpc"
+    },
+    {
+      "name": "خرید ها",
+      "color": "#ff9113",
+      "countTodo": 0,
+      "id": "bwTMir-8WBI"
+    },
+    {
+      "name": "ورزش کردن",
+      "color": "#ff9113",
+      "countTodo": 4,
+      "id": "uEGdckcZJoU"
+    }
+  ],
+  "todos": [
+    {
+      "title": "فوتبال",
+      "isCompleted": true,
+      "categoryId": "uEGdckcZJoU",
+      "id": "S7_irkA4exs"
+    },
+    {
+      "title": "والیبال نشسته",
+      "isCompleted": false,
+      "categoryId": "uEGdckcZJoU",
+      "id": "hgcRhmp2S0I"
+    },
+    {
+      "title": "پینتبال",
+      "isCompleted": true,
+      "categoryId": "uEGdckcZJoU",
+      "id": "T8kV0R-qIYY"
+    },
+    {
+      "title": "هندبال",
+      "isCompleted": false,
+      "categoryId": "uEGdckcZJoU",
+      "id": "cqXhZgJMFCI"
+    },
+    {
+      "title": "VSCd",
+      "isCompleted": false,
+      "categoryId": "PzGqAVRCRpc",
+      "id": "8H68R6vUPN8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
