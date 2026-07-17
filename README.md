@@ -1,59 +1,102 @@
-# Angular18
+# 📝 برنامه مدیریت کارهای روزانه (Todo Application)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+این پروژه یک برنامه مدیریت کارهای روزانه (Todo App) است که با **Angular 19** و **Bootstrap 5** توسعه داده شده است. کاربران می‌توانند دسته‌بندی‌های مختلف ایجاد کرده و برای هر دسته، وظایف روزانه خود را ثبت و مدیریت کنند.
 
-## Development server
+> **توجه:** این پروژه صرفاً با هدف آموزشی توسعه داده شده است. به دلیل عدم دسترسی به اینترنت هنگام پیاده‌سازی، برای ارتباط با پایگاه داده از **JSON Server (Local REST API)** استفاده شده است.
 
-To start a local development server, run:
+---
+
+## ✨ امکانات پروژه
+
+- ایجاد دسته‌بندی‌های مختلف
+- ویرایش و حذف دسته‌بندی‌ها
+- افزودن وظایف جدید برای هر دسته
+- نمایش لیست وظایف هر دسته
+- ویرایش و حذف وظایف
+- پیاده‌سازی کامل عملیات CRUD
+- اعتبارسنجی فرم‌ها (Form Validation)
+- طراحی واکنش‌گرا (Responsive)
+- رابط کاربری مدرن با Bootstrap 5
+- ارتباط با Local REST API از طریق Angular HttpClient
+
+---
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+- Angular 19
+- TypeScript
+- Bootstrap 5
+- RxJS
+- Angular HttpClient
+- JSON Server (Local REST API)
+
+---
+
+
+# 🚀 نحوه اجرای پروژه
+
+### 1. دریافت پروژه
+
+```bash
+git clone https://github.com/AmirAsadian1384AS/advanced-todo-app.git
+```
+
+### 2. ورود به پوشه پروژه
+
+```bash
+cd todoAplication
+```
+
+### 3. نصب وابستگی‌ها
+
+```bash
+npm install
+```
+
+### 4. اجرای Local API (JSON Server)
+
+ابتدا مطمئن شوید که **JSON Server** روی سیستم نصب شده است:
+
+```bash
+npm install -g json-server
+```
+
+سپس در پوشه پروژه دستور زیر را اجرا کنید:
+
+```bash
+json-server.cmd --watch db.json
+```
+
+> **نکته:** اگر از PowerShell استفاده می‌کنید و با خطای مربوط به Execution Policy مواجه شدید، می‌توانید به جای دستور بالا از دستور زیر استفاده کنید:
+
+```bash
+npx json-server --watch db.json
+```
+
+پس از اجرای موفق، API روی آدرس زیر در دسترس خواهد بود:
+
+```text
+http://localhost:3000
+```
+
+### 5. اجرای پروژه Angular
+
+در یک ترمینال جدید دستور زیر را اجرا کنید:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+سپس پروژه را در مرورگر از طریق آدرس زیر مشاهده کنید:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 👨‍💻 توسعه‌دهنده
 
-## Building
+**امیر اسدیان**
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+توسعه‌دهنده Frontend | متخصص Angular
